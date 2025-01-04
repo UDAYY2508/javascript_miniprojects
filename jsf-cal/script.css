@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: center;
+    font-family: 'poppins',sans-serif;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+    background: linear-gradient(145deg,#e6e6e6,#ffffff);
+    box-shadow: 10px 10px 20px #cccccc,-10px -10px 20px #ffffff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+
+.display input{
+    background-color: #2d3436;
+    width: 100%;
+    color: #fff;
+    font-size: 38px;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 4px 4px 8px rgb(0, 0,0.2),inset -4px -4px 8px rgb(225, 225,225,0.1);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.btn{
+    background-color: #dfe6e9;
+    border: none;
+    font-size: 24px;
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 8px rgb(0,0,0,0.1),-4px -4px 8px rgb(225, 225,225,0.5);
+
+}
+
+.btn:hover{
+    background-color: #b2bec3;   
+}
+
+.btn:active{
+    transform: translateY(4px);
+}
+
+.clear{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+.operator{
+    background-color: rgb(65, 185, 255);
+    color: white;
+}
+.equals{
+    background-color: rgb(61, 216, 133);
+    color: white;
+    grid-column: span 2;
+}
+.number{
+    background-color: rgb(39, 142, 226);
+    color: rgb(255, 255, 255);
+}
+.btn.clear:hover,
+.btn.operator:hover,
+.btn.equals:hover{
+    opacity: 0.8;
+}
